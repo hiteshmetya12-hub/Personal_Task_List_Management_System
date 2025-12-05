@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+/* Material-3 inspired tokens (approx) */
+:root {
+  --m3-surface: #f7f9fc;
+  --m3-surface-variant: #eef2f6;
+  --m3-on-surface: #202430;
+  --m3-primary: #6b7cff;
+  --m3-primary-container: #e8e9ff;
+  --m3-outline: #d6d9e6;
+  --m3-muted: #6f7685;
+}
+
+/* Global body style */
+body {
+  background: linear-gradient(180deg, var(--m3-surface), #ffffff);
+  color: var(--m3-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Soft elevated card look */
+.card-surface {
+  background: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(250,250,252,0.9));
+  border: 1px solid var(--m3-outline);
+  box-shadow: 0 6px 18px rgba(32,36,48,0.06);
+  backdrop-filter: blur(6px);
+}
+
+/* Thin custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(99,102,241,0.25);
+  border-radius: 999px;
+}
